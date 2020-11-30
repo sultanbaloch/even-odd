@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd-Even </title>
+</head>
+
+<body>
+
+    
+    <form action="#" onsubmit="odd_even">
+        <label>Enter Number:
+            <input type="number" placeholder="Enter number" id="inputnum" required></label>
+   
+            <br><br>
+
+    <button onclick="odd_even()">check</button>
+  
+</form>
+    <br><br>
+
+<h1 id="result" ></h1>
+
+
+    <script>
+function odd_even(){
+
+let number=(document.getElementById("inputnum").value);
+
+
+
+
+if(number % 2 === 0){
+
+
+document.getElementById("result").innerHTML="<h2>Even Number</h2>";
+
+
+
+}
+
+else{
+document.getElementById("result").innerHTML="<h2>Odd Number</h2`>";
+
+
+
+
+}
+
+
+
+
+
+}
+
+    </script>
+</body>
+
+</html>
